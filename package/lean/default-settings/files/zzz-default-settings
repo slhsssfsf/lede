@@ -7,6 +7,10 @@ uci set system.@system[0].timezone=CST-8
 uci set system.@system[0].zonename=Asia/Shanghai
 uci commit system
 
+uci set network.wan.proto=pppoe
+uci set network.wan.username='639630691305'
+uci set network.wan.password='123123'
+
 uci set fstab.@global[0].anon_mount=1
 uci commit fstab
 
